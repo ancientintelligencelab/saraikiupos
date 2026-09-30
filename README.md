@@ -9,12 +9,6 @@ A Saraiki corpus in Perso-Arabic script annotated with 17 Universal POS (UPOS) t
 | Test | 209 | 3,439 |
 | **Total** | **2,083** | **35,452** |
 
-## Online demo
-
-Try the Saraiki UPOS tagger: [Open the interactive demo](https://usmannawaz01.github.io/saraikiupos/).
-
-Enter Saraiki text to view its predicted UPOS tags. 
-
 
 ## Files
 
