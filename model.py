@@ -136,7 +136,7 @@ def collate_fn(batch, tokenizer, max_len: int):
     return enc, upos_labels
 
 
-class OCSBertForUPOS(nn.Module):
+class BertForUPOS(nn.Module):
     def __init__(self, bert_name: str, n_upos: int):
         super().__init__()
 
@@ -237,7 +237,7 @@ def train(seed):
         collate_fn=lambda b: collate_fn(b, tokenizer, MAX_LEN)
     )
 
-    model = OCSBertForUPOS(
+    model = BertForUPOS(
         bert_name=BERT_NAME,
         n_upos=len(upos_vocab.lab2idx)
     ).to(device)
