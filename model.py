@@ -149,8 +149,8 @@ class BertForUPOS(nn.Module):
     def forward(self, enc, upos_labels=None):
         out = self.bert(**enc)
 
-        x = self.drop(out.last_hidden_state)  # [B, L, H]
-        logits = self.head(x)                 # [B, L, n_upos]
+        x = self.drop(out.last_hidden_state)  
+        logits = self.head(x)                 
 
         loss = None
 
