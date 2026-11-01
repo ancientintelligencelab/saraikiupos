@@ -202,7 +202,7 @@ def train(seed):
     upos_vocab = LabelVocab()
     upos_vocab.build([upos for sent in train_s for _, upos in sent])
 
-    # tokenizer = AutoTokenizer.from_pretrained(BERT_NAME, use_fast=True)
+    
     tokenizer = AutoTokenizer.from_pretrained(
         BERT_NAME,
         use_fast=True,
